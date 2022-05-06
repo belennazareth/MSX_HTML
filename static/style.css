@@ -1,0 +1,93 @@
+/* CSS Document by Dieter Schneider for www.csstemplateheaven.com */
+
+* 	{margin: 0;
+	padding: 0;}
+
+body {
+	background-color: #000000;
+	background-image: url(images/body_bg.jpg);
+	background-repeat: repeat-x;
+	font-size: 62.5%;
+	  }
+	  
+#container {
+	margin: auto;
+	width: 623px;
+	color: #CCCCCC;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 1.2em;
+}
+
+#header {
+	margin: auto;
+	background-image: url(images/main_header.jpg);
+	height: 349px;
+	width: 623px;
+}
+
+
+#menu {
+	background-image: url(images/menu_bg.jpg);
+	height: 20px;
+	padding-top: 4px;
+	text-align: center;
+}
+
+#main_content {
+	background-image: url(images/content_bg.jpg);
+	height: 554px;
+	padding-top: 20px;
+	padding-left: 30px;
+	padding-right: 30px;
+	background-repeat: no-repeat;
+}
+
+#footer {
+	text-align: center;
+	clear: both;
+	border: 1px solid #666666;
+	padding: 20px;
+	background-color: #333333;
+}
+
+.float_left {float: left;
+             margin-right: 5px;
+			 margin-bottom: 3px;}
+
+p {padding-bottom: 25px;}
+
+h1 {
+	font-size: 1.6em;
+	font-style: italic;
+	color: #FFFFFF;
+	margin-left: 250px;
+	padding-top: 15px;
+}
+
+h2 {
+	font-size: 1.6em;
+	border-bottom: 1px solid gray;
+	margin-bottom: 10px;
+	font-style: italic;
+	color: #FFFFFF;
+}
+
+
+a:link {color: #FFFFFF;
+	    text-decoration: none;}     /* unvisited link */
+		
+a:visited {color: #FFFFFF;
+           text-decoration: none;}  /* visited link */
+		   
+a:hover {color: #E7CD54;
+          text-decoration: none;}   /* mouse over link */
+		  
+a:active {color: #FFFFFF;
+           text-decoration: none;}   /* selected link */
+
+#navlist li
+{
+	display: inline;
+	list-style-type: none;
+	padding-right: 20px;
+}
