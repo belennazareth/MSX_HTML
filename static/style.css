@@ -5,7 +5,7 @@
 
 body {
 	background-color: #000000;
-	background-image: url(images/body_bg.jpg);
+	background-image: url(../static/images/body_bg.jpg);
 	background-repeat: repeat-x;
 	font-size: 62.5%;
 	  }
@@ -20,21 +20,21 @@ body {
 
 #header {
 	margin: auto;
-	background-image: url(images/main_header.jpg);
+	background-image: url(../static/images/main_header.jpg);
 	height: 349px;
 	width: 623px;
 }
 
 
 #menu {
-	background-image: url(images/menu_bg.jpg);
+	background-image: url(../static/images/menu_bg.jpg);
 	height: 20px;
 	padding-top: 4px;
 	text-align: center;
 }
 
 #main_content {
-	background-image: url(images/content_bg.jpg);
+	background-image: url(../static/images/content_bg.jpg);
 	height: 554px;
 	padding-top: 20px;
 	padding-left: 30px;
