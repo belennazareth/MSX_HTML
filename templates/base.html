@@ -5,19 +5,23 @@
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <link rel="stylesheet" type="text/css" title="Style" href="../static/style.css" />
 </head>
+
 <body>
+  
 <div id="container">
+  <p>{%block inicio%}{%endblock%}</p>
   <div id="header">
     <h1></h1>
   </div>
-  
-  <div id="main_content">
+    
     <h2>{%block titulo%}{%endblock%}</h2>
+    <div id="main_content">
+    
     <p>{%block contenido%}{%endblock%}</p>
     
     
     <div id="footer"><p><a href="https://github.com/belennazareth">Designed by belennazareth </a>
-    <a href="http://www.csstemplateheaven.com">ft. Dieter Schneider</a></p></div>
+    <p><a href="http://www.csstemplateheaven.com">ft. Dieter Schneider</a></p></div>
   </div>
 </div>
 </body>
