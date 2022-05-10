@@ -1,52 +1,35 @@
-from flask import Flask, render_template, abort, redirect
-import os
+from flask import Flask, render_template, abort, request
+
 
 from functions import checkmsx
 app = Flask(__name__)
 
-games = checkmsx()	
+infoGames = checkmsx()	
 
 @app.route('/')
 def inicio():
     return render_template("inicio.html")
 
 @app.route('/juegos')
-def biblioteca():
-    return render_template("juegos.html", games=games)
+def juegos():
+    return render_template("juegos.html")
+
+@app.route('/listajuegos', methods=["POST"])
+def listajuegos():
+    datos=request.form
+    juegos=datos["nombre"]
+    lista=[]
+    for info in infoGames:
+        for info in info:
+            if info.startswith(juegos) == info:
+                lista.append(info.nombre)
+
+    return render_template("listajuegos.html", infoGames=infoGames, juegos=juegos, lista=lista)
 
 @app.route('/error')
 def error():
     return abort(404)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@app.route('/libro/<isbn>')
-def libro(isbn):
-    try:
-        return render_template("libro.html",isbn=isbn,games=games)
-    except:
-        return abort(404)
-
-@app.route('/categoria/<categoria>')
-def categoria(categoria):
-    return render_template("categoria.html", categoria=categoria, games=games)
-
-@app.route('/contacto')
-def contacto():
-    return render_template("contacto.html")
 
 
 app.run("0.0.0.0",5000,debug=True)
